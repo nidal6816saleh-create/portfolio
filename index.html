@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nidal Saleh - AI Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- باقي المحتوى يبقى كما هو -->
+        <nav>
+        <div class="nav-container">
+            <div class="logo">Nidal Saleh</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <img src="c:\Users\USER\Downloads\6026299794936414796.jpg" alt="Nidal Saleh">
+            <div class="home-text">
+                <h1>I am Engineer Nidal Saleh</h1>
+                <p>An AI programmer specialized in Artificial Intelligence, building smart systems and innovative solutions using cutting-edge technologies.</p>
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>I am a passionate AI programmer with a diploma in Artificial Intelligence and Robotics from DTC College.</p>
+            <p>I have strong experience in AI, specializing in developing AI models, neural networks, and intelligent algorithms capable of learning, adapting, and making decisions through unique and innovative solutions.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fas fa-brain"></i>
+                <h3>Machine Learning</h3>
+                <!-- <p>TensorFlow, PyTorch, Scikit-learn</p> -->
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-robot"></i>
+                <h3>Deep Learning</h3>
+                <!-- <p>Neural Networks, CNN, RNN, GAN</p> -->
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-eye"></i>
+                <h3>Computer Vision</h3>
+                <!-- <p>OpenCV, Image Processing, Object Detection</p> -->
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-language"></i>
+                <h3>Natural Language Processing</h3>
+                <!-- <p>NLTK, Transformers, Text Analysis</p> -->
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-search"></i>
+                <h3>Intelligent Search Algorithms</h3>
+                <!-- <p>A*, Genetic Algorithms, Optimization</p> -->
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h3>Programming</h3>
+                <!-- <p>Python, Java, C++</p> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title"> Projects</h2>
+        <div class="projects-grid">
+            <!-- المشروع 1 -->
+            <div class="project-card" onclick="openProject('Driver Alert System')">
+                <div class="project-img">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="project-content">
+                    <h3> Driver Alert System</h3>
+                    <p>An advanced system of advanced driver assistance systems (ADAS) that is integrated into modern vehicles.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">dlib and mediapipe</span>
+                    </div>
+                    <div class="project-link">
+                        <span>View Project →</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- المشروع 2 -->
+            <div class="project-card" onclick="openProject('Teeth shape prediction application')">
+                <div class="project-img">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Teeth shape prediction application</h3>
+                    <p>Deep learning model for image classification with high accuracy</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">GAN</span>
+                    </div>
+                    <div class="project-link">
+                        <span>View Project →</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- المشروع 3 -->
+            <div class="project-card" onclick="openProject('Other small projects')">
+                <div class="project-img">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-content">
+                    <h3>Other small projects</h3>
+                    <p> </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">ISA</span>
+                        <span class="tech-tag">CV</span>
+                    </div>
+                    <div class="project-link">
+                        <span>View Project →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- باقي المحتوى يبقى كما هو -->
+    
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>nidal6816saleh@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+963935315265</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h3>WhatsApp</h3>
+                        <p>+963935315265</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Syria, Damascus, Sayyida Zeinab, Al-Hussainiya</p>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Enter your message (minimum 10 characters)"></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <!-- <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-medium"></i></a> -->
+        </div>
+        <p>&copy; 2024 Nidal Saleh. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function openProject(projectId) {
+            window.location.href = `projects/${projectId}.html`;
+        }
+    </script>
+</body>
+</html>
