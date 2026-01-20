@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drive Alert and Warning System</title>
+  <link rel="stylesheet" href="Driver Alert System.css">
+  <style>
+    /* إضافة متغيرات الألوان */
+    :root {
+      --bg-dark: #020008;
+      --nav-bg: #2c394c;
+      --primary: #1d719d;
+      --accent: #63dafc;
+      --text-secondary: #908388;
+    }
+    
+    /* أنماط عامة للصفحة */
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-dark);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .title {
+      text-align: center;
+      color: var(--accent);
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+    }
+    
+    .section {
+      background: rgba(44, 57, 76, 0.7);
+      padding: 30px;
+      margin: 30px 0;
+      border-radius: 10px;
+      border-left: 4px solid var(--accent);
+    }
+    
+    .section h2 {
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+    
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .section li {
+      padding: 8px 0;
+      color: var(--text-secondary);
+      position: relative;
+      padding-left: 25px;
+    }
+    
+    .section li:before {
+      content: "▸";
+      color: var(--accent);
+      position: absolute;
+      left: 0;
+    }
+
+    /* أنماط قسم المميزات */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin: 30px 0;
+    }
+
+    .feature-card {
+      background: linear-gradient(135deg, rgba(29, 113, 157, 0.2) 0%, rgba(44, 57, 76, 0.7) 100%);
+      padding: 30px 25px;
+      border-radius: 15px;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(99, 218, 252, 0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent), var(--primary));
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+      border-color: rgba(99, 218, 252, 0.4);
+    }
+
+    .feature-icon {
+      width: 70px;
+      height: 70px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.8rem;
+      color: white;
+      box-shadow: 0 8px 20px rgba(29, 113, 157, 0.4);
+    }
+
+    .feature-card h3 {
+      color: var(--accent);
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+
+    .feature-card p {
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* تأثيرات إضافية */
+    .feature-card:nth-child(1):hover .feature-icon {
+      background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+    }
+
+    .feature-card:nth-child(2):hover .feature-icon {
+      background: linear-gradient(135deg, #4ECDC4, #44A08D);
+    }
+
+    .feature-card:nth-child(3):hover .feature-icon {
+      background: linear-gradient(135deg, #FFD93D, #FF9C3D);
+    }
+
+    .feature-card:nth-child(4):hover .feature-icon {
+      background: linear-gradient(135deg, #6B73FF, #000DFF);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <h1 class="title">Drive Alert and Warning System</h1>
+
+    <!-- Image Gallery -->
+    <div class="image-gallery">
+      <div class="gallery-container">
+        <div class="gallery-slide active">
+          <img src="assets/Capture.PNG" alt="System Architecture">
+        </div>
+        <div class="gallery-slide">
+          <img src="assets/Capture1.PNG" alt="Face Detection">
+        </div>
+        <div class="gallery-slide">
+          <img src="assets/Capture2.PNG" alt="Eye Tracking">
+        </div>
+        <div class="gallery-slide">
+          <img src="assets/Capture3.PNG" alt="Alert System">
+        </div>
+        <div class="gallery-slide">
+          <img src="assets/Capture4.PNG" alt="Dashboard">
+        </div>
+        <div class="gallery-slide">
+          <img src="assets/Capture5.PNG" alt="Data Analytics">
+        </div>
+        <div class="gallery-slide">
+          <img src="assets/Capture6.PNG" alt="Mobile Integration">
+        </div>
+        <div class="gallery-slide">
+          <img src="assets/Capture7.PNG" alt="Performance Metrics">
+        </div>
+
+        <button class="gallery-nav gallery-prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="gallery-nav gallery-next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="gallery-dots">
+        <!-- سيتم إضافة النقاط ديناميكياً -->
+      </div>
+    </div>
+
+    <!-- Description -->
+    <section class="section">
+      <h2>Description</h2>
+      <p>
+        The Driver Alert and Warning System is a project that relies on artificial intelligence 
+        and computer vision technologies to monitor driver behavior while driving. 
+        The system detects drowsiness, distraction, phone use, and then issues audio 
+        and visual alerts to prevent accidents.
+      </p>
+    </section>
+
+    <!-- Features Section - المميزات المضافة -->
+    <section class="section">
+      <h2>Key Features</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>Multiple Case Detection</h3>
+          <p>Comprehensive monitoring system that detects various dangerous behaviors including drowsiness, phone usage, and head turning simultaneously.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-play-circle"></i>
+          </div>
+          <h3>Real-time Monitoring</h3>
+          <p>Continuous live monitoring with instant response capabilities. Processes video feed in real-time with minimal latency for immediate alert generation.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Accurate Case Detection</h3>
+          <p>Advanced AI algorithms achieve 90% detection accuracy with sophisticated pattern recognition and machine learning models.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3>Case Documentation</h3>
+          <p>Automatically logs all detected events, along with the time zone, GPS location, and case type, into an SQLite database for analysis and reporting.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technologies Used -->
+    <section class="section">
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>Python (Basic Programming Language).</li>
+        <li>OpenCV (Video and Image Processing).</li>
+        <li>pygame (Audio Alert).</li>
+        <li>Dlib and Mediapipe (Face and Hand Detection and Tracking).</li>
+        <li>SQLite (Database).</li>
+        <li>Tkinter (Graphical User Interface).</li>
+        <li>Email/Telegram Notifications.</li>
+      </ul>
+    </section>
+
+    <!-- Mechanism -->
+    <section class="section">
+      <h2>Mechanism of Action</h2>
+      <p>
+        The system operates via a front-facing camera that monitors the driver's face in real time. 
+        Computer vision algorithms detect hand or facial features, such as the eyes, mouth, and head orientation. 
+        When a dangerous situation is detected, such as closing the eyes, yawning, turning the head, using a phone, 
+        the system immediately triggers an audible and visual alert to warn the driver. 
+        The event is recorded in a database, along with the time and location, 
+        allowing for later visualization in a graphical interface and reports to be generated 
+        to monitor performance and analyze the causes of distraction.
+      </p>
+    </section>
+
+  </div>
+
+  <!-- إضافة Font Awesome للأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="Driver Alert System.js"></script>
+</body>
+</html>
